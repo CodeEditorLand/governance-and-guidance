@@ -4,4 +4,4 @@
 
 ## Documents
 
--   [Domains within Tauri](governance-model/Domains.md)
+- [Domains within Tauri](governance-model/Domains.md)
