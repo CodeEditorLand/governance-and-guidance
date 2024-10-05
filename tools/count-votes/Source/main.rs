@@ -1,8 +1,9 @@
-use serde::Deserialize;
 use std::{
 	collections::{HashMap, HashSet},
 	fmt::Display,
 };
+
+use serde::Deserialize;
 use tokio::io::{self, BufReader};
 
 #[derive(Debug)]
@@ -18,39 +19,39 @@ enum Error {
 impl std::error::Error for Error {}
 
 impl Display for Error {
-	fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+	fn fmt(&self, f:&mut std::fmt::Formatter<'_>) -> std::fmt::Result {
 		write!(f, "{:?}", self)
 	}
 }
 
 #[derive(Deserialize, Debug)]
 struct Vote {
-	yes: Vec<String>,
-	no: Vec<String>,
-	random_id: String,
+	yes:Vec<String>,
+	no:Vec<String>,
+	random_id:String,
 }
 
 #[derive(Default, Debug)]
 struct Count {
-	total: u32,
-	vote_ids: HashSet<String>,
-	candidates: HashSet<String>,
-	yes: HashMap<String, u32>,
-	no: HashMap<String, u32>,
+	total:u32,
+	vote_ids:HashSet<String>,
+	candidates:HashSet<String>,
+	yes:HashMap<String, u32>,
+	no:HashMap<String, u32>,
 }
 
 // We're printing this as Debug.
 #[allow(dead_code)]
 #[derive(Default, Debug)]
 struct Summary {
-	votes: u32,
-	confidence_threshold: u32,
-	confidence: HashSet<String>,
-	yes: HashMap<String, u32>,
+	votes:u32,
+	confidence_threshold:u32,
+	confidence:HashSet<String>,
+	yes:HashMap<String, u32>,
 }
 
 impl Count {
-	fn assert_unique_vote(&mut self, id: String) -> Result<(), Error> {
+	fn assert_unique_vote(&mut self, id:String) -> Result<(), Error> {
 		if !self.vote_ids.insert(id) {
 			Err(Error::DuplicateVote)
 		} else {
@@ -58,11 +59,11 @@ impl Count {
 		}
 	}
 
-	fn include_candidate(&mut self, candidate: &String) {
+	fn include_candidate(&mut self, candidate:&String) {
 		self.candidates.insert(candidate.to_string());
 	}
 
-	fn increment_yes(&mut self, candidate: &String) {
+	fn increment_yes(&mut self, candidate:&String) {
 		if let Some(c) = self.yes.get_mut(candidate) {
 			*c += 1;
 		} else {
@@ -70,7 +71,7 @@ impl Count {
 		}
 	}
 
-	fn increment_no(&mut self, candidate: &String) {
+	fn increment_no(&mut self, candidate:&String) {
 		if let Some(c) = self.no.get_mut(candidate) {
 			*c += 1;
 		} else {
@@ -82,9 +83,10 @@ impl Count {
 impl TryFrom<Count> for Summary {
 	type Error = Error;
 
-	fn try_from(value: Count) -> std::result::Result<Self, Self::Error> {
-		let confidence_threshold = (f64::from(value.total) / 2f64).ceil() as u32;
-		let mut confidence: HashSet<String> = Default::default();
+	fn try_from(value:Count) -> std::result::Result<Self, Self::Error> {
+		let confidence_threshold =
+			(f64::from(value.total) / 2f64).ceil() as u32;
+		let mut confidence:HashSet<String> = Default::default();
 
 		for candidate in value.candidates.iter() {
 			let yes = value.yes.get(candidate).map_or(0, ToOwned::to_owned);
@@ -98,7 +100,12 @@ impl TryFrom<Count> for Summary {
 			}
 		}
 
-		Ok(Self { votes: value.total, confidence_threshold, confidence, yes: value.yes })
+		Ok(Self {
+			votes:value.total,
+			confidence_threshold,
+			confidence,
+			yes:value.yes,
+		})
 	}
 }
 
@@ -120,7 +127,7 @@ async fn main() -> Result<(), Error> {
 		count.assert_unique_vote(vote.random_id)?
 	}
 
-	let summary: Summary = count.try_into()?;
+	let summary:Summary = count.try_into()?;
 	println!("{:#?}", summary);
 
 	Ok(())
