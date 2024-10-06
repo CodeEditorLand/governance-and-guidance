@@ -19,9 +19,7 @@ enum Error {
 impl std::error::Error for Error {}
 
 impl Display for Error {
-	fn fmt(&self, f:&mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-		write!(f, "{:?}", self)
-	}
+	fn fmt(&self, f:&mut std::fmt::Formatter<'_>) -> std::fmt::Result { write!(f, "{:?}", self) }
 }
 
 #[derive(Deserialize, Debug)]
@@ -52,11 +50,7 @@ struct Summary {
 
 impl Count {
 	fn assert_unique_vote(&mut self, id:String) -> Result<(), Error> {
-		if !self.vote_ids.insert(id) {
-			Err(Error::DuplicateVote)
-		} else {
-			Ok(())
-		}
+		if !self.vote_ids.insert(id) { Err(Error::DuplicateVote) } else { Ok(()) }
 	}
 
 	fn include_candidate(&mut self, candidate:&String) {
@@ -84,8 +78,7 @@ impl TryFrom<Count> for Summary {
 	type Error = Error;
 
 	fn try_from(value:Count) -> std::result::Result<Self, Self::Error> {
-		let confidence_threshold =
-			(f64::from(value.total) / 2f64).ceil() as u32;
+		let confidence_threshold = (f64::from(value.total) / 2f64).ceil() as u32;
 		let mut confidence:HashSet<String> = Default::default();
 
 		for candidate in value.candidates.iter() {
@@ -100,12 +93,7 @@ impl TryFrom<Count> for Summary {
 			}
 		}
 
-		Ok(Self {
-			votes:value.total,
-			confidence_threshold,
-			confidence,
-			yes:value.yes,
-		})
+		Ok(Self { votes:value.total, confidence_threshold, confidence, yes:value.yes })
 	}
 }
 
