@@ -53,7 +53,7 @@ the industry.
 
 ## Jacob Bolda
 
-I am Jacob Bolda, [@jbolda][github-jbolda], a software engineering consulting
+I am Jacob Bolda, [`@jbolda`][github-jbolda], a software engineering consulting
 for large enterprise. My employer doesn't generally operate in the "app" space,
 so I offer my "after work" time instead. This has me positioned as a rather
 neutral member of the team, and I strive to do what is in Tauri and it's
@@ -83,7 +83,7 @@ established to help our domains achieve the best they are able.
 
 Hello Tauri team,
 
-My name is [Zack Chapple][linkedin-zack] and I wanted to take this opportunity
+My name is [`Zack Chapple`][linkedin-zack] and I wanted to take this opportunity
 to express my interest in joining the board of directors for Tauri.
 
 Over the last 13 years I have been part of numerous technology communities from
@@ -126,13 +126,13 @@ Zack
 
 <!-- Opening -->
 
-Hallo! I'm Robin van Boven ([@Beanow][github-beanow]), a software engineer based
+Hallo! I'm Robin van Boven ([`@Beanow`][github-beanow]), a software engineer based
 in the Netherlands. Currently I'm a Tauri Board Director, employed by
 CrabNebula, and would love to continue for another term as a Board Director.
 
 <!-- History with / relevance for Tauri -->
 
-About 2½ years ago I helped with establishing the [Tauri Programme][statutes]
+About 2½ years ago I helped with establishing the [`Tauri Programme`][statutes]
 and joined as a Board Director. Some of the areas I worked on during this term
 are:
 
@@ -177,7 +177,7 @@ so I'd be happy to keep sharing my opinions and support other initiatives.
 
 Hello Tauri Community,
 
-I'm david [@lemarier][github-lemarier], hailing from the beautiful Quebec,
+I'm david [`@lemarier`][github-lemarier], hailing from the beautiful Quebec,
 Canada. As a French Canadian, I have a deep-rooted love for my culture and
 heritage. Beyond my love for technology, I am an ardent outdoor enthusiast.
 Whether it's hunting, fishing, or gardening, being close to nature and striving
@@ -193,7 +193,7 @@ programming and desktop app development to an innovative project.
 
 With deep knowledge of the inner workings of Tauri, I've been actively involved
 in the core development of various components. I played a pivotal role in
-Tauri's fork of winit, which later became known as [tao][github-tao], where I
+Tauri's fork of winit, which later became known as [`tao`][github-tao], where I
 was instrumental in building the first window/app menu and tray. I also ventured
 into uncharted territories with the development of the first [wry
 iOS][github-wry-ios-poc] proof of concept.

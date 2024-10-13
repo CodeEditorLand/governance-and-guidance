@@ -8,8 +8,8 @@ For a brief explanation see: https://tauri.app/about/governance/
 
 **Domain Leads**:
 
--   [@lucasfernog][github-lucasfernog]
--   [@wusyong][github-wusyong]
+-   [`@lucasfernog`][github-lucasfernog]
+-   [`@wusyong`][github-wusyong]
 
 The main activity for Tauri. Developing and maintaining the Tauri software.
 
@@ -25,7 +25,7 @@ users.
 
 **Domain Leads**:
 
--   [@lorenzolewis][github-lorenzolewis]
+-   [`@lorenzolewis`][github-lorenzolewis]
 
 Looks after both the public face of Tauri and the resources the broader
 community relies on.
