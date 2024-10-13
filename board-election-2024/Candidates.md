@@ -1,6 +1,6 @@
 # Candidate introductions
 
-Candidates for the [2024 Tauri Board elections](README.md).
+Candidates for the [`2024 Tauri Board elections`](README.md).
 
 ## Daniel Thompson-Yvetot
 

@@ -1,6 +1,6 @@
 # Candidate introductions
 
-Candidates for the [2023 Tauri Board elections](README.md).
+Candidates for the [`2023 Tauri Board elections`](README.md).
 
 ## Bill Avery
 
