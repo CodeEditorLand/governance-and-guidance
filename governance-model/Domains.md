@@ -2,7 +2,7 @@
 
 These are the current Domains and Domain Leads within Tauri.
 
-For a brief explanation see: https://tauri.app/about/governance/
+For a brief explanation see: HTTPS://tauri.app/about/governance/
 
 ## Domain: Development
 
@@ -63,6 +63,6 @@ Responsible for all the tooling and infrastructure Tauri needs to get work done.
 An _effective_ Operations Domain results in: High value tooling and
 infrastructure for contributor use.
 
-[github-lucasfernog]: https://github.com/lucasfernog
-[github-wusyong]: https://github.com/wusyong
-[github-lorenzolewis]: https://github.com/lorenzolewis
+[github-lucasfernog]: HTTPS://github.com/lucasfernog
+[github-wusyong]: HTTPS://github.com/wusyong
+[github-lorenzolewis]: HTTPS://github.com/lorenzolewis

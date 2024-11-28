@@ -22,7 +22,7 @@ integrating with or into one of these JavaScript-based UI frameworks, rather
 than getting locked into a platform-specific native UI framework.
 
 In 2018, I released the first version of CppGraphQLGen
-(https://github.com/microsoft/cppgraphqlgen), a C++ GraphQL schema service
+(HTTPS://github.com/microsoft/cppgraphqlgen), a C++ GraphQL schema service
 generator. The goal of this project is to make it as easy as possible to project
 a C++ API/library to JavaScript client code, with minimal overhead at the
 language boundary by modeling it as a GraphQL service. This was also an
@@ -34,11 +34,11 @@ learning to write more easily and safely in Rust quickly convinced me that I
 would rather focus on Rust.
 
 Then, In 2021, I was looking into cross-platform WebView libraries, and
-simultaneously I discovered the https://github.com/microsoft/windows-rs and the
-Rust WebView bindings which later became https://github.com/tauri-apps/wry. I
+simultaneously I discovered the HTTPS://github.com/microsoft/windows-rs and the
+Rust WebView bindings which later became HTTPS://github.com/tauri-apps/wry. I
 figured Microsoft was missing an opportunity to define first class Rust bindings
 to the new WebView2 control on Windows, so I decided to try putting these
-projects together. The result was https://github.com/wravery/webview2-rs, along
+projects together. The result was HTTPS://github.com/wravery/webview2-rs, along
 with a few PRs to WRY and TAO to perform an initial port from the hand-coded
 winapi crate to auto-generated first-party bindings using windows-rs.
 
@@ -77,7 +77,7 @@ As a Director of the Board, I would be able to continue to serve the Tauri
 community and hone our processes and workflows on the foundations we have
 established to help our domains achieve the best they are able.
 
-[github-jbolda]: https://github.com/jbolda "Jacob Bolda - GitHub"
+[github-jbolda]: HTTPS://github.com/jbolda "Jacob Bolda - GitHub"
 
 ## Zack Chapple
 
@@ -117,12 +117,12 @@ forward to any responses or feedback.
 Zack
 
 [linkedin-zack]:
-	https://www.linkedin.com/in/zackarychapple/
+	HTTPS://www.linkedin.com/in/zackarychapple/
 	"Zackary Chapple - Linkedin"
 
 ## Robin van Boven
 
-<img alt="Robin avatar" src="https://avatars.githubusercontent.com/u/497556?v=4&s=200" width="100" />
+<img alt="Robin avatar" src="HTTPS://avatars.githubusercontent.com/u/497556?v=4&s=200" width="100" />
 
 <!-- Opening -->
 
@@ -166,14 +166,14 @@ elected for another term:
 A strong internal focus for me personally. Of course there is more to discuss,
 so I'd be happy to keep sharing my opinions and support other initiatives.
 
-[github-beanow]: https://github.com/beanow "Beanow - GitHub"
-[statutes]: https://dracc.commonsconservancy.org/0035/ "Statutes of Tauri"
-[bus factor]: https://en.wikipedia.org/wiki/Bus_factor "Bus factor - Wikipedia"
-[governance]: https://tauri.app/about/governance "Tauri Governance"
+[github-beanow]: HTTPS://github.com/beanow "Beanow - GitHub"
+[statutes]: HTTPS://dracc.commonsconservancy.org/0035/ "Statutes of Tauri"
+[bus factor]: HTTPS://en.wikipedia.org/wiki/Bus_factor "Bus factor - Wikipedia"
+[governance]: HTTPS://tauri.app/about/governance "Tauri Governance"
 
 ## David Lemarier
 
-<img alt="lemarier avatar" src="https://avatars.githubusercontent.com/u/22237916?v=4&s=200" width="100" />
+<img alt="lemarier avatar" src="HTTPS://avatars.githubusercontent.com/u/22237916?v=4&s=200" width="100" />
 
 Hello Tauri Community,
 
@@ -222,8 +222,8 @@ Thank you for considering my candidacy.
 
 David
 
-[github-lemarier]: https://github.com/lemarier "lemarier - GitHub"
-[github-tao]: https://github.com/tauri-apps/tao "tao - Github"
+[github-lemarier]: HTTPS://github.com/lemarier "lemarier - GitHub"
+[github-tao]: HTTPS://github.com/tauri-apps/tao "tao - Github"
 [github-wry-ios-poc]:
-	https://github.com/lemarier/wry-ios-poc-new
+	HTTPS://github.com/lemarier/wry-ios-poc-new
 	"WRY iOS POC - Github"
