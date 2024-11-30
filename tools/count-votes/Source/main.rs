@@ -79,11 +79,14 @@ impl TryFrom<Count> for Summary {
 
 	fn try_from(value:Count) -> std::result::Result<Self, Self::Error> {
 		let confidence_threshold = (f64::from(value.total) / 2f64).ceil() as u32;
+
 		let mut confidence:HashSet<String> = Default::default();
 
 		for candidate in value.candidates.iter() {
 			let yes = value.yes.get(candidate).map_or(0, ToOwned::to_owned);
+
 			let no = value.no.get(candidate).map_or(0, ToOwned::to_owned);
+
 			if yes + no != value.total {
 				return Err(Error::InvariantYesNoSum(candidate.to_string()));
 			}
@@ -100,22 +103,29 @@ impl TryFrom<Count> for Summary {
 #[tokio::main]
 async fn main() -> Result<(), Error> {
 	let mut count = Count::default();
+
 	let mut feed = BufReader::new(io::stdin());
 
 	while let Ok(vote) = jsonl::read::<_, Vote>(&mut feed).await {
 		count.total += 1;
+
 		for c in &vote.yes {
 			count.include_candidate(c);
+
 			count.increment_yes(c);
 		}
+
 		for c in &vote.no {
 			count.include_candidate(c);
+
 			count.increment_no(c);
 		}
+
 		count.assert_unique_vote(vote.random_id)?
 	}
 
 	let summary:Summary = count.try_into()?;
+
 	println!("{:#?}", summary);
 
 	Ok(())
