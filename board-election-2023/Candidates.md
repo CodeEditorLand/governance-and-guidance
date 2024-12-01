@@ -122,7 +122,7 @@ Zack
 
 ## Robin van Boven
 
-<img alt="Robin avatar" src="HTTPS://avatars.githubusercontent.com/u/497556?v=4&s=200" width="100" />
+<img alt="Robin avatar" src="https://avatars.githubusercontent.com/u/497556?v=4&s=200" width="100" />
 
 <!-- Opening -->
 
@@ -173,7 +173,7 @@ so I'd be happy to keep sharing my opinions and support other initiatives.
 
 ## David Lemarier
 
-<img alt="lemarier avatar" src="HTTPS://avatars.githubusercontent.com/u/22237916?v=4&s=200" width="100" />
+<img alt="lemarier avatar" src="https://avatars.githubusercontent.com/u/22237916?v=4&s=200" width="100" />
 
 Hello Tauri Community,
 
